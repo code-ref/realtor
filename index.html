@@ -118,7 +118,7 @@
 
  /* Анимация подчеркивания */
 
-                #under>a{
+                .under>a{
               
                     text-decoration: none;
                     position: relative;
@@ -126,13 +126,13 @@
           
                 }
 
-                #under>a:hover{
+                .under>a:hover{
                 /* width: 100%;
                 left: 0; */
                 /* color: #e68619; */
                 }
 
-            #under > a:after{
+            .under > a:after{
                 display: block;
                 content: '';
                 background-color: orange;
@@ -155,8 +155,8 @@
             }
 
 
-                #under a:hover:after,
-                #under a:hover:focus {
+                .under a:hover:after,
+                .under a:hover:focus {
                     width: 70%;
                 }
 
@@ -180,7 +180,8 @@
                     display: block;
                     height: 0px;
                     overflow: hidden;
-                    transition: all 850ms 850ms liner;
+                    transition: all 220ms 100ms linear;
+               
                
             }
 
@@ -189,14 +190,17 @@
                 
                     /* display: block; */
                     background: white;
-                    height: 228px;
+                    height: 226px;
+       
             }
 
             .menu-top Li:hover ul#y-list{
                 
                     /* display: block; */
                     background: white;
-                    height: 440px;
+                    height: 439px;
+       
+                
             }
 
             .menu-top li li a:hover {
@@ -394,6 +398,10 @@
                             
                             
                             /* НАЧАЛО SECTION 3 (HOME FLUID) */
+
+        .fluid h6 {
+            display: none;
+        }
  
 
         .fluid .cols{
@@ -724,10 +732,10 @@
         <!-- nav.menu-top>ul>li*7>a[href=#]>Lorem1 -->
         <nav class="menu-top">
             <ul class="my-list">
-                <li id='under'><a href="#">HOME</a></li>
-                <li id='under'><a href="#">ABOUT</a></li>
-                <li id='under'><a href="#">CATALOGUE</a></li>
-                <li id='under'><a href="#">PAGES</a>
+                <li class='under'><a href="#">HOME</a></li>
+                <li class='under'><a href="#">ABOUT</a></li>
+                <li class='under'><a href="#">CATALOGUE</a></li>
+                <li class='under'><a href="#">PAGES</a>
                     <ul >
                         <li><a href="#">404 PAGE</a></li>
                         <li><a href="#">TEAM</a></li>
@@ -739,10 +747,10 @@
                 
                 </li>
                 
-                <li id='under'><a href="#">SERVICES</a></li>
-                <li id='under'><a href="#">CONTACTS</a></li>
+                <li class='under'><a href="#">SERVICES</a></li>
+                <li class='under'><a href="#">CONTACTS</a></li>
 
-                <li id='under' di='blks'><a href="#">BLOCKS</a>
+                <li class='under' id='blks'><a href="#">BLOCKS</a>
                     <ul id='y-list'>
                         <li><a href="#">HEADERS</a></li>
                         <li><a href="#">FORMS</a></li>
@@ -799,8 +807,8 @@
 
 
     <section class="fluid">
-       
                     <!-- .cols>.col.col$*4>p.name+p.stats -->
+                   <h6>Heading for W3 ORG</h6> 
             <div class="cols">
                 <div class="col col1">
              
